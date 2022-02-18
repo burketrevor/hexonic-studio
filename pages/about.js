@@ -1,7 +1,7 @@
-import Head from "next/head"
-import Image from "next/image"
-import Navbar from "../components/Navbar"
-import styles from "../styles/Home.module.scss"
+import Head from "next/head";
+import Image from "next/image";
+import Navbar from "../components/Navbar";
+import styles from "../styles/Home.module.scss";
 
 export default function About() {
   return (
@@ -13,5 +13,5 @@ export default function About() {
       </Head>
       <h1>About</h1>
     </div>
-  )
+  );
 }

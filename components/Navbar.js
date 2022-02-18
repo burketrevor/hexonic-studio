@@ -1,4 +1,4 @@
-import styles from "../styles/Home.module.scss"
+import styles from "../styles/Home.module.scss";
 
 const Navbar = () => {
   return (
@@ -7,7 +7,7 @@ const Navbar = () => {
         <a href="/">Hexonix Studios</a>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

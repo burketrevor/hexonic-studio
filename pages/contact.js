@@ -1,7 +1,7 @@
-import Head from "next/head"
-import Image from "next/image"
-import Navbar from "../components/Navbar"
-import styles from "../styles/Home.module.scss"
+import Head from "next/head";
+import Image from "next/image";
+import Navbar from "../components/Navbar";
+import styles from "../styles/Home.module.scss";
 
 export default function Contact() {
   return (
@@ -13,5 +13,5 @@ export default function Contact() {
       </Head>
       <h1>Contact</h1>
     </div>
-  )
+  );
 }
