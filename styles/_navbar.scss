@@ -1,0 +1,23 @@
+.header {
+  padding: 0 20px;
+  background-color: #1d1f1d;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: $white;
+  }
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  a {
+    color: $primary-color;
+  }
+}
