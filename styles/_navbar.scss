@@ -1,22 +1,145 @@
+@import "./variables.scss";
+
 .header {
-  padding: 0 20px;
   background-color: #1d1f1d;
-  height: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  a {
-    text-decoration: none;
-    color: $white;
+  height: $header-height;
+  position: fixed;
+  z-index: 1000;
+  width: 100vw;
+  box-shadow: 0 2px $primary-color;
+
+  &__content {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 $spacing-md;
+    @media (min-width: $md) {
+      padding: 0 32px;
+    }
+    transition: 0.3s ease padding;
+
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    & > div {
+      flex: none;
+      white-space: nowrap;
+
+      &:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+      }
+      &:last-of-type {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  &__button__container {
+    display: none;
+    @media (min-width: $md) {
+      display: initial;
+    }
+  }
+  &__toggler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    @media (min-width: $md) {
+      display: none;
+    }
+    & > svg {
+      font-size: 32px;
+      color: $primary-color;
+    }
   }
 }
 
-#brand {
-  font-weight: bold;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  a {
-    color: $primary-color;
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: $white;
+  img {
+    width: 50px;
+    padding: 15px 0;
+  }
+}
+
+.nav {
+  width: 100vw;
+  position: fixed;
+  top: $header-height;
+  right: -100%;
+  background: rgba(#000000, 0.8);
+  text-align: center;
+  padding: $spacing-md 0;
+
+  &--open {
+    transition: 0.4s ease top;
+    right: 0;
+  }
+
+  &__item {
+    display: block;
+    padding: $spacing-md;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    height: 100%;
+    transition: 0.3s ease color;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  @media (min-width: $md) {
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: initial;
+    width: auto;
+    padding: 0;
+
+    &__item {
+      padding: 0 $spacing-lg;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+
+  &__button__container {
+    @media (min-width: $md) {
+      display: none;
+    }
+    padding: $spacing-md;
+  }
+}
+
+.button {
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: $white;
+  border: 3px solid $primary-color;
+  padding: $spacing-sm $spacing-lg;
+  border-radius: $sm;
+  cursor: pointer;
+
+  &:active {
+    transform: scale(0.98);
+  }
+  &:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+    color: $white;
+    transition: 0.5s ease color;
   }
 }
