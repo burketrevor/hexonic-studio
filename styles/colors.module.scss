@@ -2,3 +2,7 @@ $primary-color: #ed1c24;
 $black: #010101;
 $dark-gray: #1f1f1f;
 $white: #fff;
+
+:export {
+  primaryColor: $primary-color;
+}

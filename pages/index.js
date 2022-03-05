@@ -1,8 +1,9 @@
-import Head from "next/head";
-import Image from "next/image";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import styles from "../styles/Home.module.scss";
+import Head from "next/head"
+import Image from "next/image"
+import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
+import { primaryColor } from "../styles/colors.module.scss"
+import styles from "../styles/Home.module.scss"
 
 export default function Home() {
   return (
@@ -13,9 +14,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <section className={styles.main}>
+        <span className={styles.main__logo}>
+          <img src="./hexonic-logo-wide.svg"></img>
+        </span>
         <h1 className={styles.title}>
-          My <a href="https://nextjs.org"> Next.JS APP</a>
+          A Collaborative Space for{" "}
+          <span style={{ color: primaryColor }}>Creative Excellence</span>
         </h1>
 
         <p className={styles.description}>
@@ -52,7 +57,7 @@ export default function Home() {
             </p>
           </a>
         </div>
-      </main>
+      </section>
     </div>
-  );
+  )
 }
