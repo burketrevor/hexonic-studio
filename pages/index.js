@@ -19,7 +19,7 @@ export default function Home() {
           <img src="./hexonic-logo-wide.svg"></img>
         </span>
         <h1 className={styles.title}>
-          A Collaborative Space for{" "}
+          A Collaborative Space for <br />
           <span style={{ color: primaryColor }}>Creative Excellence</span>
         </h1>
 
@@ -60,4 +60,35 @@ export default function Home() {
       </section>
     </div>
   )
+}
+
+export async function getStaticProps() {
+  const results = await fetch(
+    `https://api.cloudinary.com/v1_1/${process.env.CLOUDINARY_CLOUD_NAME}/resources/image/tags/test`,
+    {
+      headers: {
+        Authorization: `Basic ${Buffer.from(
+          process.env.CLOUDINARY_API_KEY +
+            ":" +
+            process.env.CLOUDINARY_API_SECRET
+        ).toString("base64")}`,
+      },
+    }
+  ).then((r) => r.json())
+
+  const { resources } = results
+  const images = resources.map((resource) => {
+    const { width, height } = resource
+    return {
+      id: resource.asset_id,
+      title: resource.public_id,
+      image: resource.secure_url,
+      width,
+      height,
+    }
+  })
+
+  return {
+    props: {},
+  }
 }
