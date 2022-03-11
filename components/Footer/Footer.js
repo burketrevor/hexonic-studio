@@ -2,7 +2,7 @@ import Image from "next/image"
 import { BiCurrentLocation } from "react-icons/bi"
 import { BsFillTelephoneFill } from "react-icons/bs"
 import { MdMarkEmailRead } from "react-icons/md"
-import styles from "../styles/Home.module.scss"
+import styles from "./Footer.module.scss"
 
 const Footer = () => {
   return (

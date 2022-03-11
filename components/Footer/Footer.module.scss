@@ -1,7 +1,7 @@
-@import "./variables.scss";
+@import "../../styles/settings/settings";
 
 .footer {
-  width: 100vw;
+  //width: 100vw;
   height: 50vh;
   background-color: $black;
   border-top: 5px solid $primary-color;

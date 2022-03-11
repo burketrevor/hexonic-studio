@@ -1,11 +1,11 @@
-@import "./variables.scss";
+@import "../../styles/settings/settings";
 
 .header {
   background-color: $black;
   height: $header-height;
   position: fixed;
   z-index: 1000;
-  width: 100vw;
+  width: 100%;
   box-shadow: 0 2px $primary-color;
 
   &__content {
@@ -73,7 +73,7 @@
 }
 
 .nav {
-  width: 100vw;
+  width: 100%;
   position: fixed;
   top: $header-height;
   right: -100%;
@@ -105,7 +105,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background: initial;
-    width: auto;
+    //width: auto;
     padding: 0;
 
     &__item {

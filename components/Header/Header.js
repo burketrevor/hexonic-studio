@@ -1,5 +1,6 @@
 import React, { useState } from "react"
-import styles from "../styles/Home.module.scss"
+import Link from "next/link"
+import styles from "./Header.module.scss"
 import { RiMenu4Fill } from "react-icons/ri"
 import { AiOutlineCloseSquare } from "react-icons/ai"
 

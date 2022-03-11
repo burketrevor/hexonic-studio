@@ -1,12 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
 
-@import "./colors.module.scss";
-@import "./variables.scss";
-@import "./navbar.scss";
-@import "./footer";
+@import "/styles/settings/_settings.scss";
 
-.container {
-  padding: 0 2rem;
+.header {
+  font-size: 2em;
 }
 
 .main {
@@ -26,6 +23,9 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  &__color {
+    color: $primary-color;
+  }
 
   a {
     color: $primary-color;
@@ -39,67 +39,49 @@
   }
 }
 
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
+.folders {
+  list-style: none;
+  padding: 0;
   margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 3em;
+
+  li {
+    border: solid 2px gray;
+
+    &:hover,
+    &[data-active-folder="true"] {
+      border-color: blueviolet;
+    }
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    padding: 1em;
+    background: white;
+    border: none;
+    cursor: pointer;
+  }
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+.images {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 3em;
+}
+
+.imageTitle {
+  font-size: 1.4em;
+  margin: 0.4em 0 0;
+}
+
+.imageImage {
+  & > div {
+    display: block !important;
   }
 }
