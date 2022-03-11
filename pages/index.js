@@ -8,7 +8,7 @@ import Container from "../components/Container"
 import images from "../data/images.json"
 
 import styles from "../styles/Home.module.scss"
-import { ParallaxBanner } from "react-scroll-parallax"
+import { ParallaxBanner, ParallaxProvider } from "react-scroll-parallax"
 
 export default function Home({ images }) {
   return (
@@ -57,6 +57,37 @@ export default function Home({ images }) {
           </ul>
         </section>
       </Container>
+      <section>
+        <div>
+          <ParallaxProvider>
+            <ParallaxBanner
+              className={styles.bannerBg}
+              style={{ aspectRatio: "2 / 1" }}
+              layers={[
+                {
+                  speed: -30,
+                  children: (
+                    <video
+                      className={styles.video}
+                      autoPlay
+                      loop
+                      playsInline
+                      preload="auto"
+                      muted
+                      poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/105988/boats-at-sea.jpg"
+                      src="https://res.cloudinary.com/burke-creative/video/upload/v1646974570/Hexonic%20Studios/Video/Hexonic_Reel_for_Web_1080_yzrmv7.mp4"
+                    />
+                  ),
+                },
+              ]}
+            >
+              <div className={styles.parallaxChildren}>
+                <h1>Video Background</h1>
+              </div>
+            </ParallaxBanner>
+          </ParallaxProvider>
+        </div>
+      </section>
     </Layout>
   )
 }
