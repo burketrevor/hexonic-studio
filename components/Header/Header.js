@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import logo from "../../public/hexonic-logo-white.png"
 import styles from "./Header.module.scss"
 import { RiMenu4Fill } from "react-icons/ri"
 import { AiOutlineCloseSquare } from "react-icons/ai"
@@ -15,7 +14,12 @@ const Navbar = () => {
       <div className={styles.header__content}>
         <div className={styles.logo}>
           <span>
-            <Image src={logo} width={320} height={70} alt="hexonic main logo" />
+            <Image
+              src={"/../public/hexonic-logo-white.png"}
+              width={320}
+              height={70}
+              alt="hexonic main logo"
+            />
           </span>
         </div>
         <div>
