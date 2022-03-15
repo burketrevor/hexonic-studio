@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import Head from "next/head"
 import Image from "next/image"
 
-import logo from "../../public/hexonic-logo-white.png"
+import logo from "../public/hexonic-logo-white.png"
 
 import Layout from "../components/Layout"
 import Container from "../components/Container"
@@ -25,7 +25,12 @@ export default function Home({ images }) {
       <Container>
         <section id="intro" className={styles.main}>
           <span className={styles.main__logo}>
-            <Image src={logo} width={640} height={140} />
+            <Image
+              src={logo}
+              width={640}
+              height={140}
+              alt="hexonic main logo"
+            />
           </span>
           <h1 className={styles.title}>
             A Collaborative Space for <br />

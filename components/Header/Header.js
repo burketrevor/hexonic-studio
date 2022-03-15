@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className={styles.header__content}>
         <div className={styles.logo}>
           <span>
-            <Image src={logo} width={320} height={70} />
+            <Image src={logo} width={320} height={70} alt="hexonic main logo" />
           </span>
         </div>
         <div>
