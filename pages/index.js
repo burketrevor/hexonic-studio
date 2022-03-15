@@ -2,6 +2,8 @@ import { useState, useEffect } from "react"
 import Head from "next/head"
 import Image from "next/image"
 
+import Image from "next/image"
+
 import Layout from "../components/Layout"
 import Container from "../components/Container"
 
@@ -23,7 +25,7 @@ export default function Home({ images }) {
       <Container>
         <section id="intro" className={styles.main}>
           <span className={styles.main__logo}>
-            <img src="./hexonic-logo-wide.svg"></img>
+            <Image src={logo} width={640} height={140} />
           </span>
           <h1 className={styles.title}>
             A Collaborative Space for <br />
