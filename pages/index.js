@@ -20,9 +20,8 @@ export default function Home({ images }) {
           content="A Collaborative Space for Creative Excellence."
         />
       </Head>
-
       <Container>
-        <section className={styles.main}>
+        <section id="intro" className={styles.main}>
           <span className={styles.main__logo}>
             <img src="./hexonic-logo-wide.svg"></img>
           </span>
@@ -30,8 +29,11 @@ export default function Home({ images }) {
             A Collaborative Space for <br />
             <span className={styles.title__color}>Creative Excellence</span>
           </h1>
+          <div className={styles.mouse}>
+            <span></span>
+          </div>
         </section>
-
+        {/*}
         <section>
           <h1 className="sr-only">My Images</h1>
 
@@ -56,7 +58,9 @@ export default function Home({ images }) {
             })}
           </ul>
         </section>
+{*/}
       </Container>
+      {/*}About Section{*/}
       <section>
         <div>
           <ParallaxProvider>
@@ -74,18 +78,79 @@ export default function Home({ images }) {
                       playsInline
                       preload="auto"
                       muted
-                      poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/105988/boats-at-sea.jpg"
                       src="https://res.cloudinary.com/burke-creative/video/upload/v1646974570/Hexonic%20Studios/Video/Hexonic_Reel_for_Web_1080_yzrmv7.mp4"
                     />
                   ),
                 },
               ]}
-            >
-              <div className={styles.parallaxChildren}>
-                <h1>Video Background</h1>
-              </div>
-            </ParallaxBanner>
+            ></ParallaxBanner>
           </ParallaxProvider>
+          <Container>
+            <div className={styles.about}>
+              <div className={styles.about__title}>
+                <h2>Creative Assets for Everyone!</h2>
+              </div>
+              <div className={styles.about__text}>
+                <p>
+                  We are a full-service co-op. That means branding to content
+                  creation to campaigns and all the not-so-little things in
+                  between. Our magnum opus (fancy phrase for what we’re best at)
+                  is commercial digital cinema and studio photography.
+                </p>
+              </div>
+              <a href="#" className={styles.vertical__button}>
+                Our Work
+              </a>
+            </div>
+          </Container>
+        </div>
+      </section>
+
+      {/*}How Section{*/}
+      <section>
+        <div>
+          <ParallaxProvider>
+            <ParallaxBanner
+              className={styles.bannerBg}
+              style={{ aspectRatio: "2 / 1" }}
+              layers={[
+                {
+                  speed: -30,
+                  children: (
+                    <video
+                      className={styles.video}
+                      autoPlay
+                      loop
+                      playsInline
+                      preload="auto"
+                      muted
+                      src="https://res.cloudinary.com/burke-creative/video/upload/v1646974372/Hexonic%20Studios/Video/Hexonic_-_No_audio_nr9zrt.mp4"
+                    />
+                  ),
+                },
+              ]}
+            ></ParallaxBanner>
+          </ParallaxProvider>
+          <Container>
+            <div className={styles.about}>
+              <div className={styles.about__title}>
+                <h2>
+                  The <span className={styles.title__color}>[</span>un
+                  <span className={styles.title__color}>]</span>Agency
+                </h2>
+              </div>
+              <div className={styles.about__text}>
+                <p>
+                  We are a co-op of creatives, not employees. We’ve invited some
+                  of the best minds to share projects in a common space. We
+                  share ideas so you get our very best work.
+                </p>
+              </div>
+              <a href="#" className={styles.vertical__button}>
+                Let's Chat
+              </a>
+            </div>
+          </Container>
         </div>
       </section>
     </Layout>

@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className={styles.header__content}>
         <div>
           <span className={styles.logo}>
-            <img src="./hexonic-icon-white.png"></img>
+            <img src="./hexonic-logo-white.png"></img>
           </span>
         </div>
         <div>

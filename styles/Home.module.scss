@@ -23,6 +23,7 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  text-align: center;
   &__color {
     color: $primary-color;
   }
@@ -36,6 +37,63 @@
   a:focus,
   a:active {
     text-decoration: underline;
+  }
+}
+
+.mouse {
+  display: block;
+  margin: 0 auto;
+  width: 23px;
+  height: 40px;
+
+  position: absolute;
+  bottom: 5%;
+  position: absolute;
+  left: 50%;
+  margin-left: -14px;
+
+  span {
+    display: block;
+    margin: 6px auto;
+    width: 3px;
+    height: 32px;
+    background: $primary-color;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: scroll;
+    animation-name: scroll;
+  }
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(12px);
+    transform: translateY(12px);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(12px);
+    -ms-transform: translateY(12px);
+    transform: translateY(12px);
   }
 }
 
@@ -94,6 +152,25 @@
 }
 
 .video {
-  width: 100%;
+  width: 100vw;
   height: 100%;
+}
+
+.about {
+  height: 500px;
+  &__title {
+    background-color: $white;
+    height: 200px;
+    display: block;
+    position: relative;
+    padding: 0 30px;
+    font-size: 56px;
+    text-transform: uppercase;
+    max-width: 700px;
+    bottom: 200px;
+  }
+  &__text {
+    position: relative;
+    bottom: 100px;
+  }
 }

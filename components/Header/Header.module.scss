@@ -67,7 +67,7 @@
   font-weight: 700;
   color: $white;
   img {
-    width: 50px;
+    width: 300px;
     padding: 15px 0;
   }
 }
@@ -129,16 +129,20 @@
   text-transform: uppercase;
   background-color: transparent;
   color: $white;
-  border: 3px solid $primary-color;
+  border: none;
+  border-left: 3px solid $primary-color;
   padding: $spacing-sm $spacing-lg;
-  border-radius: $sm;
+
   cursor: pointer;
 
   &:active {
     transform: scale(0.98);
   }
   &:hover {
-    background-color: rgba(255, 0, 0, 0.5);
+    border-top: 3px solid $black;
+    border-left: 3px solid $black;
+    border-right: 3px solid $primary-color;
+    border-bottom: 3px solid $primary-color;
     color: $white;
     transition: 0.5s ease color;
   }
