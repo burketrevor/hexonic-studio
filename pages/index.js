@@ -7,7 +7,7 @@ import Container from "../components/Container"
 
 import images from "../data/images.json"
 
-import hero from "../public/hexonic-logo-wide.png"
+import hero from "../public/hexoniclogowide.png"
 
 import styles from "../styles/Home.module.scss"
 import { ParallaxBanner, ParallaxProvider } from "react-scroll-parallax"
