@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import Head from "next/head"
 import Image from "next/image"
 
-import logo from "../public/hexonic-logo-white.png"
+import logo from "../public/hexonic-logo-wide.png"
 
 import Layout from "../components/Layout"
 import Container from "../components/Container"
@@ -148,9 +148,9 @@ export default function Home({ images }) {
               </div>
               <div className={styles.about__text}>
                 <p>
-                  We are a co-op of creatives, not employees. We&apos;ve invited
-                  some of the best minds to share projects in a common space. We
-                  share ideas so you get our very best work.
+                  We are a co-op of creatives, not employees. We&rsquo;ve
+                  invited some of the best minds to share projects in a common
+                  space. We share ideas so you get our very best work.
                 </p>
               </div>
               <a href="#" className={styles.vertical__button}>
