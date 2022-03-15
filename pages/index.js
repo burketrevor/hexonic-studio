@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import Head from "next/head"
 import Image from "next/image"
 
-import Image from "next/image"
+import logo from "../../public/hexonic-logo-white.png"
 
 import Layout from "../components/Layout"
 import Container from "../components/Container"
