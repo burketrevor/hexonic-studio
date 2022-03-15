@@ -85,10 +85,9 @@
     transition: 0.4s ease top;
     right: 0;
   }
-
-  &__item {
+  & a {
     display: block;
-    padding: $spacing-md;
+    padding: 38px;
     text-decoration: none;
     color: #fff;
     font-weight: 500;

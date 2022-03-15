@@ -26,12 +26,12 @@ const Navbar = () => {
           <nav
             className={`${styles.nav} ${menuOpen ? styles[`nav--open`] : {}}`}
           >
-            <a className={styles.nav__item} href={"/"}>
+            <Link className={styles.nav__item} href={"/about"}>
               About
-            </a>
-            <a className={styles.nav__item} href={"/"}>
+            </Link>
+            <Link className={styles.nav__item} href={"/our-work"}>
               Our Work
-            </a>
+            </Link>
             <div className={styles.nav__button__container}>
               <Button />
             </div>
