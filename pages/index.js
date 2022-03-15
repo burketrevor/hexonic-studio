@@ -148,8 +148,8 @@ export default function Home({ images }) {
               </div>
               <div className={styles.about__text}>
                 <p>
-                  We are a co-op of creatives, not employees. We’ve invited some
-                  of the best minds to share projects in a common space. We
+                  We are a co-op of creatives, not employees. We&apos;ve invited
+                  some of the best minds to share projects in a common space. We
                   share ideas so you get our very best work.
                 </p>
               </div>
