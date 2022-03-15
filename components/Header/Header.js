@@ -5,6 +5,8 @@ import styles from "./Header.module.scss"
 import { RiMenu4Fill } from "react-icons/ri"
 import { AiOutlineCloseSquare } from "react-icons/ai"
 
+import logo from "../../public/hexoniclogowhite.png"
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
   const menuToggler = () => setMenuOpen((p) => !p)
@@ -14,12 +16,7 @@ const Navbar = () => {
       <div className={styles.header__content}>
         <div className={styles.logo}>
           <span>
-            <Image
-              src={"/../public/hexonic-logo-white.png"}
-              width={320}
-              height={70}
-              alt="hexonic main logo"
-            />
+            <Image src={logo} width={320} height={70} alt="hexonic main logo" />
           </span>
         </div>
         <div>

@@ -3,6 +3,7 @@ import { BiCurrentLocation } from "react-icons/bi"
 import { BsFillTelephoneFill } from "react-icons/bs"
 import { MdMarkEmailRead } from "react-icons/md"
 import styles from "./Footer.module.scss"
+import logo from "../../public/hexoniclogowhite.png"
 
 const Footer = () => {
   return (
@@ -12,12 +13,7 @@ const Footer = () => {
           <h1>Ready to start?</h1>
         </div>
         <div className={styles.footer__logo}>
-          <Image
-            src={"/../public/hexonic-logo-white.png"}
-            width={320}
-            height={70}
-            alt="hexonic main logo"
-          />
+          <Image src={logo} width={320} height={70} alt="hexonic main logo" />
         </div>
         <span className={styles.footer__location}>
           <BiCurrentLocation />
