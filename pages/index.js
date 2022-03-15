@@ -2,8 +2,6 @@ import { useState, useEffect } from "react"
 import Head from "next/head"
 import Image from "next/image"
 
-import logo from "../public/hexonic-logo-wide.png"
-
 import Layout from "../components/Layout"
 import Container from "../components/Container"
 
@@ -26,7 +24,7 @@ export default function Home({ images }) {
         <section id="intro" className={styles.main}>
           <span className={styles.main__logo}>
             <Image
-              src={logo}
+              src={"/../public/hexonic-logo-wide.png"}
               width={640}
               height={140}
               alt="hexonic main logo"
