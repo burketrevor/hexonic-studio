@@ -75,7 +75,7 @@ export default function Home({ images }) {
                 Your brand has a story. We help tell that story with creativity so that you stand out in the marketplace. We love discovering your brand’s spark so we can set it on fire.
                 </p>
               </div>
-              <a href="https://www.youtube.com/channel/UC-fnGeW_PeTre3UzyA9OJqw/" target="_blank" className={styles.vertical__button}>
+              <a href="https://www.youtube.com/channel/UC-fnGeW_PeTre3UzyA9OJqw/" target="_blank" rel="noreferrer" className={styles.vertical__button}>
                 Our Work
               </a>
             </div>
