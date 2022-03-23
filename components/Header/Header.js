@@ -26,9 +26,9 @@ const Navbar = () => {
             <Link className={styles.nav__item} href={"/about"}>
               About
             </Link>
-            <Link className={styles.nav__item} href={"/our-work"}>
+            <a className={styles.nav__item} href="https://www.youtube.com/channel/UC-fnGeW_PeTre3UzyA9OJqw/" target="_blank"  rel="noopener noreferrer">
               Our Work
-            </Link>
+            </a>
             <div className={styles.nav__button__container}>
               <Button />
             </div>

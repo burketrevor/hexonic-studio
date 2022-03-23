@@ -24,20 +24,19 @@ export default function Home({ images }) {
       </Head>
       <Container>
         <section id="intro" className={styles.main}>
-          <span className={styles.main__logo}>
-            <Image
-              src={hero}
-              width={640}
-              height={140}
-              alt="hexonic main logo"
-            />
-          </span>
           <h1 className={styles.title}>
-            A Collaborative Space for <br />
-            <span className={styles.title__color}>Creative Excellence</span>
+            Welcome to Hexonic Studios. <br />
+            <span>We make videos.</span>
           </h1>
-          <div className={styles.mouse}>
-            <span></span>
+          
+          <div className={styles.scrolldown__wrapper}>
+            <div className={styles.scrolldown}>
+              <svg height="300" width="20">
+                <circle className={styles.scrolldown__p1} cx="5" cy="15" r="3" />
+                <circle className={styles.scrolldown__p2} cx="5" cy="15" r="3" />                 
+                <circle className={styles.scrolldown__p3} cx="5" cy="15" r="3" />                 
+              </svg>
+            </div>
           </div>
         </section>
       </Container>
@@ -69,17 +68,14 @@ export default function Home({ images }) {
           <Container>
             <div className={styles.about}>
               <div className={styles.about__title}>
-                <h2>Creative Assets for Everyone!</h2>
+                <h2>From Reels to Documentaries</h2>
               </div>
               <div className={styles.about__text}>
                 <p>
-                  We are a full-service co-op. That means branding to content
-                  creation to campaigns and all the not-so-little things in
-                  between. Our magnum opus (fancy phrase for what we’re best at)
-                  is commercial digital cinema and studio photography.
+                Your brand has a story. We help tell that story with creativity so that you stand out in the marketplace. We love discovering your brand’s spark so we can set it on fire.
                 </p>
               </div>
-              <a href="#" className={styles.vertical__button}>
+              <a href="https://www.youtube.com/channel/UC-fnGeW_PeTre3UzyA9OJqw/" target="_blank" className={styles.vertical__button}>
                 Our Work
               </a>
             </div>
@@ -116,15 +112,12 @@ export default function Home({ images }) {
             <div className={styles.about}>
               <div className={styles.about__title}>
                 <h2>
-                  The <span className={styles.title__color}>[</span>un
-                  <span className={styles.title__color}>]</span>Agency
+                All the <br/>Feels
                 </h2>
               </div>
               <div className={styles.about__text}>
                 <p>
-                  We are a co-op of creatives, not employees. We&rsquo;ve
-                  invited some of the best minds to share projects in a common
-                  space. We share ideas so you get our very best work.
+                  We understand both the energy of brands and the struggle of trying to communicate that energy with the world. We turn emotion into knowledge and knowledge into movement.
                 </p>
               </div>
               <a href="#" className={styles.vertical__button}>

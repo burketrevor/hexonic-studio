@@ -16,7 +16,7 @@
 
   &__logo {
     display: flex;
-    padding-top: 50px;
+    padding: 25px 0;
     justify-content: center;
     flex-direction: row;
   }
@@ -26,44 +26,46 @@
     justify-content: center;
     align-items: center;
     flex-grow: 1;
+    :hover {
+      color: $primary-color;
+    }
   }
 
-  &__location {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  &__icon svg{
     color: $white;
-    font-size: 20px;
-    margin-right: 15px;
-    & > svg {
-      font-size: 22px;
-      color: $white;
-    }
-  }
-  &__phone {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $white;
-    font-size: 20px;
-    padding: 15px;
-    margin-right: 15px;
-    & > svg {
-      font-size: 22px;
-      color: $white;
-    }
-  }
-  &__email {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $white;
-    font-size: 20px;
-    padding: 15px;
-    margin-right: 15px;
-    & > svg {
-      font-size: 22px;
-      color: $white;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    padding: 5px;
+    :hover {
+      animation: bounce 1s;
+      fill: $primary-color;
     }
   }
 }
+
+

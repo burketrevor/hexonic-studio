@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto:wght@500;700&display=swap');
 @import "/styles/settings/_settings.scss";
 
 .header {
@@ -165,7 +164,7 @@
     position: relative;
     padding: 0 30px;
     font-size: 56px;
-    text-transform: uppercase;
+    
     max-width: 700px;
     bottom: 200px;
   }
@@ -174,3 +173,53 @@
     bottom: 100px;
   }
 }
+
+
+@keyframes scrolldown {
+	0% {
+		opacity: 0;
+		transform: translate(0, -50px);
+	}
+	50% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+	100% {
+		opacity: 0;
+		transform: translate(0, 50px);
+	}
+}
+.scrolldown__wrapper {
+	left: 50%;
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	transform: translate(-50%, -50%);
+}
+.scrolldown {
+	height: 100px;
+	margin: 0 auto 8px;
+	text-align: center;
+	width: 30px;
+}
+.scrolldown__p1 {
+	animation-duration: 1.5s;
+	animation-name: scrolldown;
+	animation-iteration-count: infinite;
+	fill: $primary-color;
+}
+.scrolldown__p2 {
+	animation-duration: 1.5s;
+	animation-name: scrolldown;
+	animation-iteration-count: infinite;
+	fill: $primary-color;
+	animation-delay: .5s;
+}
+.scrolldown__p3 {
+	animation-duration: 1.5s;
+	animation-name: scrolldown;
+	animation-iteration-count: infinite;
+	fill: $primary-color;
+	animation-delay: 1.5s;
+}
+

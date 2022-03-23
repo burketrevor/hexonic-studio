@@ -14,9 +14,11 @@
     "react-dom": "17.0.2",
     "react-icons": "^4.3.1",
     "react-scroll-parallax": "^3.0.3",
-    "sass": "^1.49.7"
+    "sass": "^1.49.9"
   },
   "devDependencies": {
+    "@emotion/core": "^11.0.0",
+    "@emotion/styled": "^11.8.1",
     "eslint": "8.9.0",
     "eslint-config-next": "12.0.10",
     "prettier": "2.5.1"
