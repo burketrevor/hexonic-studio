@@ -6,9 +6,6 @@ import HoverImage from "react-hover-image";
 import Layout from "../components/Layout";
 import Container from "../components/Container";
 
-import redTim from "../public/tim-red.jpg";
-import normalTim from "../public/tim-normal.jpg";
-
 import styles from "../styles/Home.module.scss";
 
 export default function About() {
