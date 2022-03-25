@@ -1,0 +1,11 @@
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  &__member {
+    padding: 10px;
+  }
+  &__photo {
+    width: 25rem;
+  }
+}
