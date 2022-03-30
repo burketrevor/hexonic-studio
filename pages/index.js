@@ -15,7 +15,7 @@ import {
   ParallaxProvider,
 } from "react-scroll-parallax";
 
-export default function Home({ images }) {
+export default function Home() {
   return (
     <Layout>
       <Head>

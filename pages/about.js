@@ -20,14 +20,15 @@ export default function About() {
       </Head>
       <Container>
         <div className={styles.main}>
-          <h1>About</h1>
-          <p>
+          <quote>
             Videography is capturing a story
-            within an environment. Cinematography
-            is capturing that story while creating
-            the environment. We are experts in
-            both.
-          </p>
+            within an environment. <br />
+            Cinematography is capturing that story
+            while creating the environment.
+            <br /> We are experts in both.
+          </quote>
+        </div>
+        <div>
           <p>
             Excellence in video, it’s all we know.
             Our model is simple: whether it’s

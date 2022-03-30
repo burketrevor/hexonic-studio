@@ -9,3 +9,11 @@
     width: 25rem;
   }
 }
+
+.main quote {
+  border-left: 3px solid $primary-color;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  padding: 10px;
+  color: $light-gray;
+}
