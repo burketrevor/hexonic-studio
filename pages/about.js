@@ -19,50 +19,63 @@ export default function About() {
         />
       </Head>
       <Container>
-        <div className={styles.main}>
+        <div className={styles.about}>
           <quote>
-            Videography is capturing a story
-            within an environment. <br />
-            Cinematography is capturing that story
-            while creating the environment.
+            Videography is capturing a story within an environment. <br />
+            Cinematography is capturing that story while creating the
+            environment.
             <br /> We are experts in both.
           </quote>
         </div>
-        <div>
+      </Container>
+      <section>
+        <div className={styles.triple__wrapper}>
+          <div className={styles.triple__image}>
+            <Image
+              src="https://res.cloudinary.com/burke-creative/image/upload/v1646974751/Hexonic%20Studios/Photos/DSC_9656_pr9iww.jpg"
+              width={500}
+              height={334}
+            />
+          </div>
+          <div className={styles.triple__image}>
+            <Image
+              src="https://res.cloudinary.com/burke-creative/image/upload/v1646974809/Hexonic%20Studios/Photos/DSC_0002_hrjso7.jpg"
+              width={500}
+              height={334}
+            />
+          </div>
+          <div className={styles.triple__image}>
+            <Image
+              src="https://res.cloudinary.com/burke-creative/image/upload/v1646974786/Hexonic%20Studios/Photos/DSC_9871_i9ofvq.jpg"
+              width={500}
+              height={334}
+            />
+          </div>
+        </div>
+      </section>
+      <Container>
+        <div className={styles.story}>
           <p>
-            Excellence in video, it’s all we know.
-            Our model is simple: whether it’s
-            vertical reels or full-scaled
-            productions, we bring our best. We’ve
-            been creating compelling videos for
-            over a decade. Some of us are
-            life-long entrepreneurs and others
-            have crossed over from corporate jobs.
+            Excellence in video, it’s all we know. Our model is simple: whether
+            it’s vertical reels or full-scaled productions, we bring our best.
+            We’ve been creating compelling videos for over a decade. Some of us
+            are life-long entrepreneurs and others have crossed over from
+            corporate jobs.
           </p>
           <p>
-            About four years ago, TJ Cardinal
-            contracted Tim Doerfler to shoot a
-            commercial for one of his companies.
-            They produced a series of
-            made-for-social videos that took TJ’s
-            business to the next level. Together,
-            they invested in gear and a studio
-            space. Other companies started to
-            notice the compelling and interesting
-            videos that were coming out of what is
-            now Hexonic Studios. The success
-            brought in clients like
-            Sherwin-Williams, Wal-Mart, and
-            NASCAR. Tyler and Cole were added to
-            the team to not only help with the
-            workload, but to add new perspectives
-            and experience.
+            About four years ago, TJ Cardinal contracted Tim Doerfler to shoot a
+            commercial for one of his companies. They produced a series of
+            made-for-social videos that took TJ’s business to the next level.
+            Together, they invested in gear and a studio space. Other companies
+            started to notice the compelling and interesting videos that were
+            coming out of what is now Hexonic Studios. The success brought in
+            clients like Sherwin-Williams, Wal-Mart, and NASCAR. Tyler and Cole
+            were added to the team to not only help with the workload, but to
+            add new perspectives and experience.
           </p>
           <p>
-            In 2019 we recognized that we had
-            something special and decided to
-            become intentional about offering our
-            services to the world.
+            In 2019 we recognized that we had something special and decided to
+            become intentional about offering our services to the world.
           </p>
         </div>
       </Container>
@@ -80,12 +93,9 @@ export default function About() {
                 "https://res.cloudinary.com/burke-creative/image/upload/v1648146129/Hexonic%20Studios/Team%20Photos/5X8A8791-Edit-Edit_lc9pfn.jpg"
               }
             />
-            <h2 className={styles.team__name}>
-              Tim Doerfler
-            </h2>
+            <h2 className={styles.team__name}>Tim Doerfler</h2>
             <h4 className={styles.team__title}>
-              Production Lead/Director of
-              Cinematography
+              Production Lead/Director of Cinematography
             </h4>
           </div>
           {/*}TJ{*/}
@@ -99,12 +109,8 @@ export default function About() {
                 "https://res.cloudinary.com/burke-creative/image/upload/v1648146129/Hexonic%20Studios/Team%20Photos/5X8A8784-Edit_kjxqbg.jpg"
               }
             />
-            <h2 className={styles.team__name}>
-              TJ Cardinal
-            </h2>
-            <h4 className={styles.team__title}>
-              Creative Director/Writer
-            </h4>
+            <h2 className={styles.team__name}>TJ Cardinal</h2>
+            <h4 className={styles.team__title}>Creative Director/Writer</h4>
           </div>
           {/*}Cole{*/}
           <div className={styles.team__member}>
@@ -117,9 +123,7 @@ export default function About() {
                 "https://res.cloudinary.com/burke-creative/image/upload/v1648146129/Hexonic%20Studios/Team%20Photos/5X8A8788-Edit_st5gu3.jpg"
               }
             />
-            <h2 className={styles.team__name}>
-              Cole Sarver
-            </h2>
+            <h2 className={styles.team__name}>Cole Sarver</h2>
             <h4 className={styles.team__title}>
               Short Format Director/Animation
             </h4>
@@ -135,12 +139,8 @@ export default function About() {
                 "https://res.cloudinary.com/burke-creative/image/upload/v1648146128/Hexonic%20Studios/Team%20Photos/5X8A8779-Edit_awq5rj.jpg"
               }
             />
-            <h2 className={styles.team__name}>
-              Tyler Neading
-            </h2>
-            <h4 className={styles.team__title}>
-              Videography Lead
-            </h4>
+            <h2 className={styles.team__name}>Tyler Neading</h2>
+            <h4 className={styles.team__title}>Videography Lead</h4>
           </div>
         </div>
       </Container>

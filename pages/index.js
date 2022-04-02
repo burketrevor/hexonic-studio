@@ -85,6 +85,7 @@ export default function Home() {
                       autoPlay
                       loop
                       playsInline
+                      q-auto
                       preload="auto"
                       muted
                       src="https://res.cloudinary.com/burke-creative/video/upload/v1646974570/Hexonic%20Studios/Video/Hexonic_Reel_for_Web_1080_yzrmv7.mp4"
@@ -94,14 +95,14 @@ export default function Home() {
               ]}></ParallaxBanner>
           </ParallaxProvider>
           <Container>
-            <div className={styles.about}>
+            <div className={styles.feature}>
               <div
-                className={styles.about__title}>
+                className={styles.feature__title}>
                 <h2>
                   From Reels to Documentaries
                 </h2>
               </div>
-              <div className={styles.about__text}>
+              <div className={styles.feature__text}>
                 <p>
                   Your brand has a story. We help
                   tell that story with creativity
@@ -143,6 +144,7 @@ export default function Home() {
                       playsInline
                       preload="auto"
                       muted
+                      q-auto
                       src="https://res.cloudinary.com/burke-creative/video/upload/v1646974372/Hexonic%20Studios/Video/Hexonic_-_No_audio_nr9zrt.mp4"
                     />
                   ),
@@ -150,15 +152,15 @@ export default function Home() {
               ]}></ParallaxBanner>
           </ParallaxProvider>
           <Container>
-            <div className={styles.about}>
+            <div className={styles.feature}>
               <div
-                className={styles.about__title}>
+                className={styles.feature__title}>
                 <h2>
                   All the <br />
                   Feels
                 </h2>
               </div>
-              <div className={styles.about__text}>
+              <div className={styles.feature__text}>
                 <p>
                   We understand both the energy of
                   brands and the struggle of

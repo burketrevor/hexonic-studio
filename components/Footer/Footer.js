@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footer__item}>
-        <div>
+        <div className={styles.contact}>
           <a href="">
           <h1>Ready to start?</h1>
           </a>
