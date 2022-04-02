@@ -85,7 +85,7 @@ export default function Home() {
                       autoPlay
                       loop
                       playsInline
-                      q-auto
+                      q_auto
                       preload="auto"
                       muted
                       src="https://res.cloudinary.com/burke-creative/video/upload/v1646974570/Hexonic%20Studios/Video/Hexonic_Reel_for_Web_1080_yzrmv7.mp4"
@@ -144,7 +144,7 @@ export default function Home() {
                       playsInline
                       preload="auto"
                       muted
-                      q-auto
+                      q_auto
                       src="https://res.cloudinary.com/burke-creative/video/upload/v1646974372/Hexonic%20Studios/Video/Hexonic_-_No_audio_nr9zrt.mp4"
                     />
                   ),
