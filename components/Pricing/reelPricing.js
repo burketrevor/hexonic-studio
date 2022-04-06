@@ -53,7 +53,7 @@ class ReelPricing extends React.Component {
               ref={this.slider}
               defaultValue={this.state.priceInputValue}
               onChange={this.handlePricingSlide}
-            />
+            /> reels
           </label>
           <div ref={this.sliderValue} className={styles.pricing__slider__value}>
             {this.getPricingData(this.state.priceInput)}
