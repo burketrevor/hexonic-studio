@@ -90,28 +90,6 @@ export default function Pricing() {
           </div>
         </div>
       </Container>
-      <div className={styles.clients__wrapper}>
-        <div className={styles.clients__logo}>
-          <Image
-            src="/../public/fostering-hope-white.png"
-            width={100}
-            height={100}
-          />
-        </div>
-        <div className={styles.clients__logo}>
-          <Image src="/../public/o-huddle-white.png" width={100} height={100} />
-        </div>
-        <div className={styles.clients__logo}>
-          <Image src="/../public/MISSION-white.png" width={100} height={100} />
-        </div>
-        <div className={styles.clients__logo}>
-          <Image
-            src="/../public/dalton-pto-white.png"
-            width={100}
-            height={100}
-          />
-        </div>
-      </div>
     </Layout>
   );
 }
