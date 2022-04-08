@@ -56,7 +56,13 @@ const Navbar = () => {
 };
 
 const Button = () => {
-  return <button className={styles.button}>Contact</button>;
+  return (
+    <button className={styles.button}>
+      <Link className={styles.nav__item} href={"#"}>
+        Contact
+      </Link>
+    </button>
+  );
 };
 
 export default Navbar;
