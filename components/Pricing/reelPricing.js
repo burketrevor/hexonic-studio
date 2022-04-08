@@ -93,11 +93,6 @@ class ReelPricing extends React.Component {
                   </ul>
                 </div>
               </div>
-              <div className={styles.pricing__item__cta}>
-                <a className={styles.button} href="http://cruip.com/">
-                  Buy Now
-                </a>
-              </div>
             </div>
           </div>
         </div>
