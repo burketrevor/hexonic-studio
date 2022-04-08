@@ -41,6 +41,12 @@ export default function Pricing() {
             <li>
               Snippet Video $1,250 (pulling a short clip out of a longer video)
             </li>
+            <li>
+              <sub>
+                Prices are subject to project parameters and geographic
+                location. 50% down and balance is due upon completion.
+              </sub>
+            </li>
           </ul>
         </div>
       </Container>
@@ -52,8 +58,60 @@ export default function Pricing() {
             commercial video or photography to a non-profit or humanitarian
             cause.
           </p>
+          <div className={styles.clients__wrapper}>
+            <div className={styles.clients__logo}>
+              <Image
+                src="/../public/fostering-hope-white.png"
+                width={100}
+                height={100}
+              />
+            </div>
+            <div className={styles.clients__logo}>
+              <Image
+                src="/../public/o-huddle-white.png"
+                width={100}
+                height={100}
+              />
+            </div>
+            <div className={styles.clients__logo}>
+              <Image
+                src="/../public/MISSION-white.png"
+                width={100}
+                height={100}
+              />
+            </div>
+            <div className={styles.clients__logo}>
+              <Image
+                src="/../public/dalton-pto-white.png"
+                width={100}
+                height={100}
+              />
+            </div>
+          </div>
         </div>
       </Container>
+      <div className={styles.clients__wrapper}>
+        <div className={styles.clients__logo}>
+          <Image
+            src="/../public/fostering-hope-white.png"
+            width={100}
+            height={100}
+          />
+        </div>
+        <div className={styles.clients__logo}>
+          <Image src="/../public/o-huddle-white.png" width={100} height={100} />
+        </div>
+        <div className={styles.clients__logo}>
+          <Image src="/../public/MISSION-white.png" width={100} height={100} />
+        </div>
+        <div className={styles.clients__logo}>
+          <Image
+            src="/../public/dalton-pto-white.png"
+            width={100}
+            height={100}
+          />
+        </div>
+      </div>
     </Layout>
   );
 }

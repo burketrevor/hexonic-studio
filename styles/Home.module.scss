@@ -312,3 +312,11 @@
   border: 3px solid $primary-color;
   box-shadow: 0 8px 16px rgba(46, 52, 88, 0.16);
 }
+
+.clients__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+}

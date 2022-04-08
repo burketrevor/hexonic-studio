@@ -5,6 +5,7 @@ import HoverImage from "react-hover-image";
 
 import Layout from "../components/Layout";
 import Container from "../components/Container";
+import Carousel from "../components/Carousel/Carousel";
 
 import styles from "../styles/Home.module.scss";
 
@@ -27,6 +28,7 @@ export default function About() {
             <br /> We are experts in both.
           </quote>
         </div>
+        <Carousel />
       </Container>
       <section>
         <div className={styles.triple__wrapper}>
@@ -93,7 +95,7 @@ export default function About() {
                 "https://res.cloudinary.com/burke-creative/image/upload/v1648146129/Hexonic%20Studios/Team%20Photos/5X8A8791-Edit-Edit_lc9pfn.jpg"
               }
             />
-            <h2 className={styles.team__name}>Tim Doerfler</h2>
+            <h3 className={styles.team__name}>Tim Doerfler</h3>
             <h4 className={styles.team__title}>
               Production Lead/Director of Cinematography
             </h4>
@@ -109,7 +111,7 @@ export default function About() {
                 "https://res.cloudinary.com/burke-creative/image/upload/v1648146129/Hexonic%20Studios/Team%20Photos/5X8A8784-Edit_kjxqbg.jpg"
               }
             />
-            <h2 className={styles.team__name}>TJ Cardinal</h2>
+            <h3 className={styles.team__name}>TJ Cardinal</h3>
             <h4 className={styles.team__title}>Creative Director/Writer</h4>
           </div>
           {/*}Cole{*/}
@@ -123,7 +125,7 @@ export default function About() {
                 "https://res.cloudinary.com/burke-creative/image/upload/v1648146129/Hexonic%20Studios/Team%20Photos/5X8A8788-Edit_st5gu3.jpg"
               }
             />
-            <h2 className={styles.team__name}>Cole Sarver</h2>
+            <h3 className={styles.team__name}>Cole Sarver</h3>
             <h4 className={styles.team__title}>
               Short Format Director/Animation
             </h4>
@@ -139,7 +141,7 @@ export default function About() {
                 "https://res.cloudinary.com/burke-creative/image/upload/v1648146128/Hexonic%20Studios/Team%20Photos/5X8A8779-Edit_awq5rj.jpg"
               }
             />
-            <h2 className={styles.team__name}>Tyler Neading</h2>
+            <h3 className={styles.team__name}>Tyler Neading</h3>
             <h4 className={styles.team__title}>Videography Lead</h4>
           </div>
         </div>

@@ -10,10 +10,7 @@ import images from "../data/images.json";
 import hero from "../public/hexoniclogowide.png";
 
 import styles from "../styles/Home.module.scss";
-import {
-  ParallaxBanner,
-  ParallaxProvider,
-} from "react-scroll-parallax";
+import { ParallaxBanner, ParallaxProvider } from "react-scroll-parallax";
 
 export default function Home() {
   return (
@@ -26,40 +23,29 @@ export default function Home() {
         />
       </Head>
       <Container>
-        <section
-          id="intro"
-          className={styles.main}>
+        <section id="intro" className={styles.main}>
           <h1 className={styles.title}>
             Welcome to Hexonic Studios. <br />
             <span>We make videos.</span>
           </h1>
 
-          <div
-            className={
-              styles.scrolldown__wrapper
-            }>
+          <div className={styles.scrolldown__wrapper}>
             <div className={styles.scrolldown}>
               <svg height="300" width="20">
                 <circle
-                  className={
-                    styles.scrolldown__p1
-                  }
+                  className={styles.scrolldown__p1}
                   cx="5"
                   cy="15"
                   r="3"
                 />
                 <circle
-                  className={
-                    styles.scrolldown__p2
-                  }
+                  className={styles.scrolldown__p2}
                   cx="5"
                   cy="15"
                   r="3"
                 />
                 <circle
-                  className={
-                    styles.scrolldown__p3
-                  }
+                  className={styles.scrolldown__p3}
                   cx="5"
                   cy="15"
                   r="3"
@@ -92,33 +78,27 @@ export default function Home() {
                     />
                   ),
                 },
-              ]}></ParallaxBanner>
+              ]}
+            ></ParallaxBanner>
           </ParallaxProvider>
           <Container>
             <div className={styles.feature}>
-              <div
-                className={styles.feature__title}>
-                <h2>
-                  From Reels to Documentaries
-                </h2>
+              <div className={styles.feature__title}>
+                <h1>From Reels to Documentaries</h1>
               </div>
               <div className={styles.feature__text}>
                 <p>
-                  Your brand has a story. We help
-                  tell that story with creativity
-                  so that you stand out in the
-                  marketplace. We love discovering
-                  your brand’s spark so we can set
-                  it on fire.
+                  Your brand has a story. We help tell that story with
+                  creativity so that you stand out in the marketplace. We love
+                  discovering your brand’s spark so we can set it on fire.
                 </p>
               </div>
               <a
                 href="https://www.youtube.com/channel/UC-fnGeW_PeTre3UzyA9OJqw/"
                 target="_blank"
                 rel="noreferrer"
-                className={
-                  styles.vertical__button
-                }>
+                className={styles.vertical__button}
+              >
                 Our Work
               </a>
             </div>
@@ -149,32 +129,25 @@ export default function Home() {
                     />
                   ),
                 },
-              ]}></ParallaxBanner>
+              ]}
+            ></ParallaxBanner>
           </ParallaxProvider>
           <Container>
             <div className={styles.feature}>
-              <div
-                className={styles.feature__title}>
-                <h2>
+              <div className={styles.feature__title}>
+                <h1>
                   All the <br />
                   Feels
-                </h2>
+                </h1>
               </div>
               <div className={styles.feature__text}>
                 <p>
-                  We understand both the energy of
-                  brands and the struggle of
-                  trying to communicate that
-                  energy with the world. We turn
-                  emotion into knowledge and
-                  knowledge into movement.
+                  We understand both the energy of brands and the struggle of
+                  trying to communicate that energy with the world. We turn
+                  emotion into knowledge and knowledge into movement.
                 </p>
               </div>
-              <a
-                href="#"
-                className={
-                  styles.vertical__button
-                }>
+              <a href="#" className={styles.vertical__button}>
                 Let's Chat
               </a>
             </div>
