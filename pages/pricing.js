@@ -61,28 +61,28 @@ export default function Pricing() {
           <div className={styles.clients__wrapper}>
             <div className={styles.clients__logo}>
               <Image
-                src="/../public/fostering-hope-white.png"
+                src="https://res.cloudinary.com/burke-creative/image/upload/v1649397964/Hexonic%20Studios/Photos/fostering-hope-white_cw6bei.png"
                 width={100}
                 height={100}
               />
             </div>
             <div className={styles.clients__logo}>
               <Image
-                src="/../public/o-huddle-white.png"
+                src="https://res.cloudinary.com/burke-creative/image/upload/v1649397964/Hexonic%20Studios/Photos/o-huddle-white_cbuzoz.png"
                 width={100}
                 height={100}
               />
             </div>
             <div className={styles.clients__logo}>
               <Image
-                src="/../public/MISSION-white.png"
+                src="https://res.cloudinary.com/burke-creative/image/upload/v1649397964/Hexonic%20Studios/Photos/MISSION-white_hxn66a.png"
                 width={100}
                 height={100}
               />
             </div>
             <div className={styles.clients__logo}>
               <Image
-                src="/../public/dalton-pto-white.png"
+                src="https://res.cloudinary.com/burke-creative/image/upload/v1649398060/Hexonic%20Studios/Photos/dalton-pto-white_to6tew.png"
                 width={100}
                 height={100}
               />
