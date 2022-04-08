@@ -2,21 +2,17 @@ import React from "react";
 import styles from "./Pricing.module.scss";
 import Container from "../Container";
 
-class ReelPricing extends React.Component {
+class CinemaPricing extends React.Component {
   state = {
-    priceInputValue: "1",
+    priceInputValue: "0",
     priceInput: {
-      0: "3",
-      1: "6",
-      2: "12",
-      3: "13+",
+      0: "~5",
+      1: "5+",
     },
     priceOutput: {
       plan1: {
-        0: ["$", "3,750", ""],
-        1: ["$", "7,200", ""],
-        2: ["$", "11,400", ""],
-        3: ["", "Contact Us", ""],
+        0: ["$", "2,750", ""],
+        1: ["", "Contact Us", ""],
       },
     },
   };
@@ -49,7 +45,7 @@ class ReelPricing extends React.Component {
             <div className={styles.pricing__item__content}>
               <div className={styles.pricing__slider}>
                 <label className={styles.form__slider}>
-                  <span>HD Video Reels base price:</span>
+                  <span>Cinema Video base price:</span>
                   <input
                     className={styles.range}
                     type="range"
@@ -62,7 +58,7 @@ class ReelPricing extends React.Component {
                   ref={this.sliderValue}
                   className={styles.pricing__slider__value}
                 >
-                  {this.getPricingData(this.state.priceInput)} reels
+                  {this.getPricingData(this.state.priceInput)} minutes
                 </div>
               </div>
               <div className={styles.pricing__item__header}>
@@ -84,4 +80,4 @@ class ReelPricing extends React.Component {
   }
 }
 
-export default ReelPricing;
+export default CinemaPricing;

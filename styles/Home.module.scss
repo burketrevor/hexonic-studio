@@ -235,3 +235,80 @@
   fill: $primary-color;
   animation-delay: 1.5s;
 }
+
+
+.pricing {
+  min-height: 50vh;
+  padding: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing__item__features {
+  padding: 0 2rem;
+}
+
+.pricing__item__features__list {
+  list-style: none;
+  padding: 0;
+
+  li {
+    margin-bottom: 0;
+    padding: 14px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.pricing__item__features__list li {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    height: 1px;
+    background: #e9ecf8;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%2011h14v2H5z%22%20fill%3D%22%239298B8%22%20fill-rule%3D%22nonzero%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    -webkit-box-ordinal-group: 0;
+    order: -1;
+  }
+
+  &.is__checked::after {
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill-rule%3D%22nonzero%22%20fill%3D%22none%22%3E%3Ccircle%20fill%3D%22%2300C2A9%22%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%2212%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M10.5%2012.267l-2.5-1.6-1%201.066L10.5%2016%2017%209.067%2016%208z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  }
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  margin: 12px;
+}
+
+.give {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin: 2rem;
+  color: $white;
+  background-color: $black;
+  border: 3px solid $primary-color;
+  box-shadow: 0 8px 16px rgba(46, 52, 88, 0.16);
+}
