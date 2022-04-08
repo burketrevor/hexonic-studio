@@ -5,7 +5,7 @@ import Footer from "../Footer";
 
 import styles from "./Layout.module.scss";
 
-const Layout = ({ children, className, ...rest }) => {
+const LayoutMain = ({ children, className, ...rest }) => {
   let layoutClassName = styles.layout;
 
   if (className) {
@@ -17,11 +17,11 @@ const Layout = ({ children, className, ...rest }) => {
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <Header />
       <main className={styles.main}>{children}</main>
       <Footer />
     </div>
   );
 };
 
-export default Layout;
+export default LayoutMain;

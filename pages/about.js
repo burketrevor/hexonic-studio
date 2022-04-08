@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import HoverImage from "react-hover-image";
 
-import Layout from "../components/Layout";
+import LayoutMain from "../components/LayoutMain";
 import Container from "../components/Container";
 import Carousel from "../components/Carousel/Carousel";
 
@@ -11,7 +11,7 @@ import styles from "../styles/Home.module.scss";
 
 export default function About() {
   return (
-    <Layout>
+    <LayoutMain>
       <Head>
         <title>hexonic studios</title>
         <meta
@@ -28,7 +28,6 @@ export default function About() {
             <br /> We are experts in both.
           </quote>
         </div>
-        <Carousel />
       </Container>
       <section>
         <div className={styles.triple__wrapper}>
@@ -146,6 +145,6 @@ export default function About() {
           </div>
         </div>
       </Container>
-    </Layout>
+    </LayoutMain>
   );
 }

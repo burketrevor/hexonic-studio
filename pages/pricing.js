@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import HoverImage from "react-hover-image";
 
-import Layout from "../components/Layout";
+import LayoutMain from "../components/LayoutMain";
 import ReelPricing from "../components/Pricing/reelPricing";
 import CinemaPricing from "../components/Pricing/cinemaPricing";
 import Container from "../components/Container";
@@ -12,7 +12,7 @@ import styles from "../styles/Home.module.scss";
 
 export default function Pricing() {
   return (
-    <Layout>
+    <LayoutMain>
       <Head>
         <title>hexonic studios</title>
         <meta
@@ -90,6 +90,6 @@ export default function Pricing() {
           </div>
         </div>
       </Container>
-    </Layout>
+    </LayoutMain>
   );
 }

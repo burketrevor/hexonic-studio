@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import Layout from "../components/Layout";
 import Container from "../components/Container";
+import Header from "../components/Header";
 
 import images from "../data/images.json";
 
@@ -22,6 +23,7 @@ export default function Home() {
           content="A Collaborative Space for Creative Excellence."
         />
       </Head>
+
       <Container>
         <section id="intro" className={styles.main}>
           <h1 className={styles.title}>
@@ -55,6 +57,7 @@ export default function Home() {
           </div>
         </section>
       </Container>
+      <Header />
       {/*}About Section{*/}
       <section>
         <div>
