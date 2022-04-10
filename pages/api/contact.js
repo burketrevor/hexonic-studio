@@ -1,3 +1,5 @@
+import nodemailer from "nodemailer";
+
 export default async (req, res) => {
   const { name, email, message } = req.body;
   const transporter = nodemailer.createTransport({
