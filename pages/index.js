@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
+import Link from "next/link";
 import Image from "next/image";
 
 import Layout from "../components/Layout";
@@ -154,9 +155,9 @@ export default function Home() {
                   emotion into knowledge and knowledge into movement.
                 </p>
               </div>
-              <a href="#" className={styles.vertical__button}>
+              <Link href={"/contact"} className={styles.vertical__button}>
                 Let's Chat
-              </a>
+              </Link>
             </div>
           </Container>
         </div>
