@@ -70,7 +70,7 @@ export default function Contact() {
               type="text"
               value={inputs.name}
               onChange={handleChange}
-              className={styles.inputField}
+              className={styles.input__field}
               placeholder="Name"
               required
             />
@@ -79,7 +79,7 @@ export default function Contact() {
               type="email"
               value={inputs.email}
               onChange={handleChange}
-              className={styles.inputField}
+              className={styles.input__field}
               placeholder="Email"
               required
             />
@@ -88,12 +88,13 @@ export default function Contact() {
               type="text"
               value={inputs.message}
               onChange={handleChange}
-              className={styles.inputField}
+              className={styles.input__field}
               placeholder="Message"
-              rows="5"
               required
             />
-            <input type="submit" className={styles.button} />
+            <button type="submit" className={styles.vertical__button__form}>
+              Submit
+            </button>
             {form.state === "loading" ? (
               <div>Sending....</div>
             ) : form.state === "error" ? (

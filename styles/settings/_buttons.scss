@@ -11,3 +11,22 @@
     transition: 0.5s ease color;
   }
 }
+
+
+.vertical__button__form {
+  border: none;
+  border-left: 3px solid $primary-color;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  background: none;
+  &:hover {
+    border-top: 3px solid $white;
+    border-left: 3px solid $white;
+    border-right: 3px solid $primary-color;
+    border-bottom: 3px solid $primary-color;
+    transition: 0.5s ease color;
+  }
+}
