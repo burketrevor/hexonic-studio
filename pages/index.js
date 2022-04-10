@@ -155,9 +155,9 @@ export default function Home() {
                   emotion into knowledge and knowledge into movement.
                 </p>
               </div>
-              <Link href={"/contact"} className={styles.vertical__button}>
-                Let's Chat
-              </Link>
+              <a className={styles.vertical__button}>
+                <Link href={"/contact"}>Let's Chat</Link>
+              </a>
             </div>
           </Container>
         </div>
