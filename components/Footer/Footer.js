@@ -1,5 +1,11 @@
 import Image from "next/image";
-import { BsYoutube, BsInstagram, BsFacebook } from "react-icons/bs";
+import {
+  BsYoutube,
+  BsInstagram,
+  BsFacebook,
+  BsFileEarmarkPerson,
+} from "react-icons/bs";
+import { FaTiktok } from "react-icons/fa";
 import styles from "./Footer.module.scss";
 import logo from "../../public/hexoniclogowhite.png";
 
@@ -8,7 +14,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.footer__item}>
         <div className={styles.contact}>
-          <a href="">
+          <a href="/contact">
             <h1>Ready to start?</h1>
           </a>
         </div>
@@ -33,6 +39,18 @@ const Footer = () => {
             className={styles.socials__icon}
           >
             <BsYoutube />
+          </a>
+          <a
+            href="https://www.tiktok.com/@hexonicstudios"
+            className={styles.socials__icon}
+          >
+            <FaTiktok />
+          </a>
+          <a
+            href="https://bio.site/hexonicstudios"
+            className={styles.socials__icon}
+          >
+            <BsFileEarmarkPerson />
           </a>
         </div>
       </div>

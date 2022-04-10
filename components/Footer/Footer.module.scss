@@ -45,13 +45,13 @@
 	}
 
 	40% {
-		-webkit-transform: translateY(-10px);
-		transform: translateY(-10px);
+		-webkit-transform: translateY(-5px);
+		transform: translateY(-5px);
 	}
 
 	80% {
-		-webkit-transform: translateY(-5px);
-		transform: translateY(-5px);
+		-webkit-transform: translateY(-2px);
+		transform: translateY(-2px);
 	}
 }
 
@@ -66,10 +66,7 @@
     width: 40px;
     margin: 5px;
     padding: 5px;
-    :hover {
-      animation: bounce .5s;
-      fill: $primary-color;
-    }
+    
   }
 }
 

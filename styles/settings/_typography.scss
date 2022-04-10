@@ -1,1 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto:wght@500;700&display=swap");
+
+
+@font-face {
+    font-family: 'Averta';
+    src: local('Averta'), url(./averta-black-webfont.woff) format('woff');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
+
+@font-face {
+font-family: 'Averta-reg';
+src: local('Averta'), url(./AvertaDemoPE-Regular.woff) format('woff');
+/* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}

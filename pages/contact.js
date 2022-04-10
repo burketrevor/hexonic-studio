@@ -63,7 +63,9 @@ export default function Contact() {
   return (
     <LayoutMain>
       <Container>
-        <div className={styles.main}>
+        <div className={styles.main__contact}>
+          <h1>Let's get started</h1>
+          <h4>We're looking forward to creating with you.</h4>
           <form className={styles.form} onSubmit={(e) => onSubmitForm(e)}>
             <input
               id="name"
@@ -100,7 +102,11 @@ export default function Contact() {
             ) : form.state === "error" ? (
               <div>{form.message}</div>
             ) : (
-              form.state === "success" && <div>Sent successfully</div>
+              form.state === "success" && (
+                <div>
+                  <h2>Sent successfully</h2>
+                </div>
+              )
             )}
           </form>
         </div>

@@ -58,7 +58,7 @@ const Navbar = () => {
 const Button = () => {
   return (
     <button className={styles.button}>
-      <Link className={styles.nav__item} href={"#"}>
+      <Link className={styles.nav__item} href={"/contact"}>
         Contact
       </Link>
     </button>

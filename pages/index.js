@@ -27,9 +27,13 @@ export default function Home() {
       <Container>
         <section id="intro" className={styles.main}>
           <h1 className={styles.title}>
-            Welcome to Hexonic Studios. <br />
-            <span>We make videos.</span>
+            Welcome. We're Hexonic Studios. <br />
           </h1>
+          <p>
+            <h3 className={styles.title}>
+              We make videos. The kind you remember
+            </h3>
+          </p>
 
           <div className={styles.scrolldown__wrapper}>
             <div className={styles.scrolldown}>
