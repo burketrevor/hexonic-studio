@@ -16,7 +16,7 @@ const Layout = ({ children, className, ...rest }) => {
   return (
     <>
     <Script>
-    $(window).scroll(function() {
+    {`$(window).scroll(function() {
         if ($(this).scrollTop()>600)
         {
           $('.header').show(1000);
@@ -25,7 +25,7 @@ const Layout = ({ children, className, ...rest }) => {
           {
             $('.header').hide(1000);
         }
-    });
+    });`}
     </Script>
 
     <div className={layoutClassName} {...rest}>
