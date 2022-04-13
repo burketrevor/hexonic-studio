@@ -36,8 +36,8 @@ const Layout = ({ children, className, ...rest }) => {
       <main className={styles.main}>{children}</main>
       <Footer />
     </div>
+    </>
   );
-  </>
 };
 
 export default Layout;
