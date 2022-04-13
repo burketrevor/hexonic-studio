@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import Script from "next/script";
 
 import Layout from "../components/Layout";
 import Container from "../components/Container";
@@ -16,6 +17,7 @@ import { ParallaxBanner, ParallaxProvider } from "react-scroll-parallax";
 
 export default function Home() {
   return (
+  
     <Layout>
       <Head>
         <title>hexonic studios</title>
@@ -24,7 +26,20 @@ export default function Home() {
           content="A Collaborative Space for Creative Excellence."
         />
       </Head>
-
+      <>
+      <Script>
+      $(window).scroll(function() {
+    if ($(this).scrollTop()>600)
+     {
+      $('.header').show(1000);
+     }
+  	else 
+      {
+        $('.header').hide(1000);
+     }
+ });
+      </Script>
+    </>
       <Container>
         <section id="intro" className={styles.main}>
           <h1 className={styles.title}>
