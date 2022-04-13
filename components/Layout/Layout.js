@@ -14,19 +14,6 @@ const Layout = ({ children, className, ...rest }) => {
   }
 
   return (
-    <>
-    <Script id="show-header">
-    {`$(window).scroll(function() {
-        if ($(this).scrollTop()>600)
-        {
-          $('.header').show(1000);
-        }
-        else 
-          {
-            $('.header').hide(1000);
-        }
-    });`}
-    </Script>
 
     <div className={layoutClassName} {...rest}>
       <Head>
@@ -36,7 +23,7 @@ const Layout = ({ children, className, ...rest }) => {
       <main className={styles.main}>{children}</main>
       <Footer />
     </div>
-    </>
+  
   );
 };
 

@@ -17,7 +17,20 @@ import { ParallaxBanner, ParallaxProvider } from "react-scroll-parallax";
 
 export default function Home() {
   return (
-  
+    <>
+    <Script id="show-header">
+    {`$(window).scroll(function() {
+        if ($(this).scrollTop()>600)
+        {
+          $('.header').show(1000);
+        }
+        else 
+          {
+            $('.header').hide(1000);
+        }
+    });`}
+    </Script>
+
     <Layout>
       <Head>
         <title>hexonic studios</title>
@@ -165,5 +178,6 @@ export default function Home() {
         </div>
       </section>
     </Layout>
+    </>
   );
 }
