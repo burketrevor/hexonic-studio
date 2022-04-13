@@ -32,7 +32,7 @@ export default function Home() {
           </h1>
           <p>
             <h3 className={styles.title}>
-              We make videos. The kind you remember
+              We make videos. The kind you remember.
             </h3>
           </p>
 
