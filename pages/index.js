@@ -18,6 +18,8 @@ import { ParallaxBanner, ParallaxProvider } from "react-scroll-parallax";
 export default function Home() {
   return (
     <>
+    <Script src="../static/jquery.min.js"></Script>
+    <Script src="../static/jquery.counter.js"></Script>
     <Script id="show-header">
     {`$(window).scroll(function() {
         if ($(this).scrollTop()>600)
@@ -38,8 +40,6 @@ export default function Home() {
           name="description"
           content="A Collaborative Space for Creative Excellence."
         />
-        <Script src="../static/jquery.min.js"></Script>
-        <Script src="../static/jquery.counter.js"></Script>
       </Head>
     
       <Container>
