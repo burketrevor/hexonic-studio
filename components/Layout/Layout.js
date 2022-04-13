@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Script from "next/script";
 
 import Header from "../Header";
 import Footer from "../Footer";
@@ -13,6 +14,20 @@ const Layout = ({ children, className, ...rest }) => {
   }
 
   return (
+    <>
+    <Script>
+    $(window).scroll(function() {
+        if ($(this).scrollTop()>600)
+        {
+          $('.header').show(1000);
+        }
+        else 
+          {
+            $('.header').hide(1000);
+        }
+    });
+    </Script>
+
     <div className={layoutClassName} {...rest}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
@@ -22,6 +37,7 @@ const Layout = ({ children, className, ...rest }) => {
       <Footer />
     </div>
   );
+  </>
 };
 
 export default Layout;
