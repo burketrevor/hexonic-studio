@@ -19,14 +19,14 @@ export default function Home() {
   return (
     <>
     <Script id="show-header">
-    {`window.scroll(function() {
-        if (this.scrollTop()>600)
+    {`$(window).scroll(function() {
+        if ($(this).scrollTop()>600)
         {
-          document.getElementByClassName("header").style.display = "";
+          $('.header').show(1000);
         }
         else 
           {
-            document.getElementByClassName("header").style.display = "none";
+            $('.header').hide(1000);
         }
     });`}
     </Script>
