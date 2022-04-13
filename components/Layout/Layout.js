@@ -15,7 +15,7 @@ const Layout = ({ children, className, ...rest }) => {
 
   return (
     <>
-    <Script>
+    <Script id="show-header">
     {`$(window).scroll(function() {
         if ($(this).scrollTop()>600)
         {
