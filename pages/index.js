@@ -38,8 +38,8 @@ export default function Home() {
           name="description"
           content="A Collaborative Space for Creative Excellence."
         />
-        <script src="../static/jquery.min.js" />
-        <script src="../static/jquery.counter.js" />
+        <Script src="../static/jquery.min.js"></Script>
+        <Script src="../static/jquery.counter.js"></Script>
       </Head>
     
       <Container>
