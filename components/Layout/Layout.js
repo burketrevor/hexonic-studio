@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Script from "next/script";
 
 import Header from "../Header";
 import Footer from "../Footer";
@@ -13,6 +14,7 @@ const Layout = ({ children, className, ...rest }) => {
   }
 
   return (
+
     <div className={layoutClassName} {...rest}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
@@ -21,6 +23,7 @@ const Layout = ({ children, className, ...rest }) => {
       <main className={styles.main}>{children}</main>
       <Footer />
     </div>
+  
   );
 };
 

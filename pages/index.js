@@ -17,7 +17,22 @@ import { ParallaxBanner, ParallaxProvider } from "react-scroll-parallax";
 
 export default function Home() {
   return (
-  
+    <>
+    <Script id="show-header">
+    {`$(window).scroll(function() {
+        if ($(this).scrollTop()>600)
+        {
+          $('.header').show(1000);
+        }
+        else 
+          {
+            $('.header').hide(1000);
+        }
+    });`}
+    </Script>
+    <Script src="https://cdn.lr-in.com/LogRocket.min.js" crossorigin="anonymous" id="log-rocket"></Script>
+    <Script id="log-rocket">window.LogRocket && window.LogRocket.init('k0380u/hexonic-studios');</Script>
+
     <Layout>
       <Head>
         <title>hexonic studios</title>
@@ -25,6 +40,7 @@ export default function Home() {
           name="description"
           content="A Collaborative Space for Creative Excellence."
         />
+        <meta name="google-site-verification" content="2m0S3NtY0hNe1yuELKxlkGbM4C39_etzKd92sUZyiHU" />
       </Head>
     
       <Container>
@@ -165,5 +181,6 @@ export default function Home() {
         </div>
       </section>
     </Layout>
+    </>
   );
 }
