@@ -30,6 +30,8 @@ export default function Home() {
         }
     });`}
     </Script>
+    <Script src="https://cdn.lr-in.com/LogRocket.min.js" crossorigin="anonymous"></Script>
+    <Script>window.LogRocket && window.LogRocket.init('k0380u/hexonic-studios');</Script>
 
     <Layout>
       <Head>
