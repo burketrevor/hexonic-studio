@@ -40,6 +40,7 @@ export default function Home() {
           name="description"
           content="A Collaborative Space for Creative Excellence."
         />
+        <meta name="google-site-verification" content="2m0S3NtY0hNe1yuELKxlkGbM4C39_etzKd92sUZyiHU" />
       </Head>
     
       <Container>
