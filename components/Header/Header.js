@@ -12,7 +12,7 @@ const Navbar = () => {
   const menuToggler = () => setMenuOpen((p) => !p);
 
   return (
-    <div className={styles.header}>
+    <div className={`${styles.header} ${styles.header__hidden}`}>
       <div className={styles.header__content}>
         <div className={styles.logo}>
           <Link href={"/"}>
