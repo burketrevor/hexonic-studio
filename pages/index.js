@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import Script from "next/script";
 import { useInView } from "react-intersection-observer";
 
 import Layout from "../components/Layout";
@@ -18,6 +17,11 @@ import LogRocket from "logrocket";
 LogRocket.init("k0380u/hexonic-studios");
 
 export default function Home() {
+  const { ref: showHeader, inView, entry } = useInView({
+    
+  }});
+
+
   return (
     <Layout>
       <Head>
@@ -69,7 +73,7 @@ export default function Home() {
           </div>
         </section>
       </Container>
-      <Header />
+      <Header ref={ showHeader }/>
       {/*}About Section{*/}
       <section>
         <div>
