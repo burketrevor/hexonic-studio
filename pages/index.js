@@ -17,10 +17,22 @@ import LogRocket from "logrocket";
 LogRocket.init("k0380u/hexonic-studios");
 
 export default function Home() {
-  const { ref: showHeader, inView, entry } = useInView({
-    
-  }});
+  const [show, setShow] = useState(false)
+  const controlNavbar = () => {
+    if (window.scrollY>800) {
+      setShow(true)
+    } else {
+      setShow(false)
+    }
+  }
 
+  useEffect(() => {
+    window.addEventListener('scroll', controlNavbar)
+    return () => {
+      window.removeEventListener('scroll', controlNavbar)
+
+    }
+  }, [])
 
   return (
     <Layout>
@@ -73,7 +85,7 @@ export default function Home() {
           </div>
         </section>
       </Container>
-      <Header ref={ showHeader }/>
+      <Header className={styles.show}/>
       {/*}About Section{*/}
       <section>
         <div>
