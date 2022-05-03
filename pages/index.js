@@ -19,7 +19,7 @@ LogRocket.init("k0380u/hexonic-studios");
 export default function Home() {
   const [show, setShow] = useState(false)
   const controlNavbar = () => {
-    if (window.scrollY>800) {
+    if (window.scrollY > 800) {
       setShow(true)
     } else {
       setShow(false)
@@ -27,7 +27,7 @@ export default function Home() {
   }
 
   useEffect(() => {
-    window.addEventListener('scroll', controlNavbar)
+      window.addEventListener('scroll', controlNavbar)
     return () => {
       window.removeEventListener('scroll', controlNavbar)
 
