@@ -151,7 +151,7 @@ export default function Home() {
                       preload="auto"
                       muted
                       q_auto
-                      src="https://res.cloudinary.com/burke-creative/video/upload/v1646974372/Hexonic%20Studios/Video/Hexonic_-_No_audio_nr9zrt.mp4"
+                      src="https://fast.wistia.com/embed/medias/fdl991oqic.jsonp"
                     />
                   ),
                 },
